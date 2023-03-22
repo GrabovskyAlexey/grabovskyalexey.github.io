@@ -72,6 +72,7 @@ img {
   padding-left: 0;
   height: 32px;
   margin-top: 16px;
+  margin-left: 24px;
 }
 
 .left-menu-item a {
@@ -79,6 +80,16 @@ img {
   color: var(--main-text-color);
 }
 
+.left-menu-item {
+  text-align: center;
+  padding: 9px 16px;
+  border: 1px solid black;
+}
+
 .project-dropdown-menu, .people-dropdown-menu, .board-dropdown-menu {
   display: none;
+}
+
+.logo{
+  padding-left: 7px;
 }
