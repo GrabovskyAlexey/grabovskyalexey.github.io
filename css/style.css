@@ -26,6 +26,7 @@
   --main-text-color: #252C32;
   --icon-deep-gray-color: #5B6871;
   --icon-light-gray-color: #84919A;
+  --divider-light-gray-color: #E5E9EB;
   --card-text-color: #676767;
   --active-menu-text-color: #0E73F6;
   --inactive-text-grey-color: #6E7C87;
@@ -55,41 +56,67 @@ img {
 .main-header {
   display: flex;
   justify-content: space-between;
-
+  border-bottom: 1px solid var(--divider-light-gray-color);
 }
 
 /* Menu */
+
 .main-navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 16px 0 17px 0;
 }
 
-.left-menu, .right-menu {
+.left-menu {
   list-style-type: none;
   display: flex;
   align-items: center;
-  padding-left: 0;
+  padding-left: 24px;
   height: 32px;
-  margin-top: 16px;
-  margin-left: 24px;
+  margin: 0 auto;
 }
 
+.right-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    height: 32px;
+    margin: 0 auto;
+  }
+
 .left-menu-item a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  height: 14px;
   color: var(--main-text-color);
 }
 
 .left-menu-item {
-  text-align: center;
+  display: flex;
   padding: 9px 16px;
-  border: 1px solid black;
+}
+
+.dropdown-left-menu a{
+  height: 20px;
+}
+
+.dropdown-left-menu {
+  padding: 4px;
 }
 
 .project-dropdown-menu, .people-dropdown-menu, .board-dropdown-menu {
   display: none;
 }
 
-.logo{
-  padding-left: 7px;
+.logo {
+  padding: 8px 4px;
 }
+
+.btn {
+  border: 1px solid #DDE2E4;
+  border-radius: 6px;
+}
+
