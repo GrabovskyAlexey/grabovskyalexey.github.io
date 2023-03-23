@@ -31,6 +31,7 @@
   --active-menu-text-color: #0E73F6;
   --inactive-text-grey-color: #6E7C87;
   --bg-light-gray-color: #F6F8F9;
+  --main-border-color: #DDE2E4;
   --avatar-border-black: rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +117,20 @@ img {
 }
 
 .btn {
-  border: 1px solid #DDE2E4;
+  border: 1px solid var(--main-border-color);
   border-radius: 6px;
 }
 
+.search-input {
+  font-family: inherit;
+  margin-right: 16px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 6px;
+  height: 32px;
+}
+
+.right-menu-item {
+  border: 1px solid black;
+  height: 32px;
+  padding: 8px;
+}
