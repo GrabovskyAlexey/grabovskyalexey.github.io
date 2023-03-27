@@ -139,8 +139,37 @@ a
     padding: 16px
     border-right: 1px solid var(--divider-light-gray-color)
 
+.left-info-panel-title
+  display: flex
+  justify-content: flex-start
+  align-items: flex-end
+  &-logo
+    padding: 5px
+  &-desc
+    margin-left: 8px
+    &-header
+      margin: 0
+      font: inherit
+      font-weight: 700
+    &-text
+      color: var(--inactive-text-grey-color)
+      font-size: 12px
+      line-height: 16px
+
+
+
 .left-info-menu
   list-style-type: none
+  padding: 0
+  &-divider
+    border: 1px solid  var(--divider-light-gray-color)
+  &-item
+    display: flex
+    align-items: center
+    padding: 4px 12px 4px 8px
+    &-link
+      color: var(--main-text-color)
+      margin-left: 8px
 
 /* Main board block
 .main-content-board

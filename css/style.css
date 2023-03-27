@@ -157,8 +157,43 @@ a {
   border-right: 1px solid var(--divider-light-gray-color);
 }
 
+.left-info-panel-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.left-info-panel-title-logo {
+  padding: 5px;
+}
+.left-info-panel-title-desc {
+  margin-left: 8px;
+}
+.left-info-panel-title-desc-header {
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+}
+.left-info-panel-title-desc-text {
+  color: var(--inactive-text-grey-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .left-info-menu {
   list-style-type: none;
+  padding: 0;
+}
+.left-info-menu-divider {
+  border: 1px solid var(--divider-light-gray-color);
+}
+.left-info-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px 4px 8px;
+}
+.left-info-menu-item-link {
+  color: var(--main-text-color);
+  margin-left: 8px;
 }
 
 /* Main board block */
