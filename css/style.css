@@ -128,6 +128,24 @@ a {
   border: 1px solid var(--main-border-color);
   border-radius: 6px;
   height: 32px;
+  padding-left: 34px;
+}
+.search-input::placeholder {
+  color: #9AA6AC;
+}
+
+.search-input-wrapper {
+  position: relative;
+}
+.search-input-wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  top: 10px;
+  background: url("../icons/search.svg") center center/cover no-repeat;
 }
 
 .avatar-mini {
@@ -137,7 +155,7 @@ a {
 }
 .avatar-mini-img {
   border-inline: 1px solid var(--avatar-border-black);
-  border-radius: 16px;
+  border-radius: 999px;
 }
 
 /* Content */
@@ -199,6 +217,94 @@ a {
 /* Main board block */
 .main-content-board {
   width: 100%;
+  padding: 24px 0 0 32px;
+}
+
+/* Top info block */
+.breadcrumbs {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumbs-wrapper {
+  margin-bottom: 12px;
+}
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 16px;
+  padding: 0 4px;
+}
+.breadcrumbs-item:after {
+  content: "";
+  display: block;
+  height: 9px;
+  width: 5px;
+  position: absolute;
+  background: url("../icons/arrow-right.svg") center center/cover no-repeat;
+  right: -11px;
+  top: 7px;
+}
+.breadcrumbs-item-link {
+  color: var(--inactive-text-grey-color);
+}
+.breadcrumbs-item-last {
+  padding: 0 4px;
+  color: var(--main-text-color);
+}
+
+.top-info-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.top-info-panel-header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.top-info-panel-actions {
+  gap: 4px;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 32px 0 0;
+}
+.top-info-panel-actions-item {
+  display: flex;
+  align-items: center;
+}
+.top-info-panel-actions-item-link {
+  display: flex;
+  margin: 3px 14px;
+  color: var(--bg-light-gray-color);
+}
+.top-info-panel-actions-item-link-btn {
+  display: flex;
+  margin: 8px;
+}
+
+.btn-blue {
+  background-color: var(--button-blue);
+  font-weight: 700;
+}
+
+.main-board-menu {
+  display: flex;
+}
+.main-board-menu-title {
+  display: none;
+}
+.main-board-menu-list {
+  list-style-type: none;
+  display: flex;
+}
+.main-board-menu-sprint-list {
+  display: none;
+}
+.main-board-menu-people-list {
+  list-style-type: none;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

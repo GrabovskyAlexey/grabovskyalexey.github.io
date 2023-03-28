@@ -79,10 +79,7 @@
     </div>
     <div class="right-main-menu">
       <ul class="right-menu">
-        <li>
-          <img src="icons/search.svg" width="16" height="16" alt="">
-        </li>
-        <li>
+        <li class="search-input-wrapper">
           <label>
             <input class="search-input" type="text" placeholder="Поиск">
           </label>
@@ -104,7 +101,7 @@
         </li>
         <li class="right-menu-item avatar-mini">
           <a href="#">
-            <img src="img/avatar1.png" width="24" height="24" alt="">
+            <img class="avatar-mini-img" src="img/avatar1.png" width="24" height="24" alt="">
           </a>
         </li>
       </ul>
@@ -163,47 +160,46 @@
       </ul>
     </section>
     <div class="main-content-board">
-      <section class="top-info-panel">
-        <h2>Все спринты</h2>
+      <section class="breadcrumbs-wrapper">
         <ul class="breadcrumbs">
-          <li><a href="#">Проекты</a></li>
-          <li><a href="#">Интернациональные</a></li>
-          <li><a>Продукт Web</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="#">Проекты</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="#">Интернациональные</a></li>
+          <li class="breadcrumbs-item-last"><a>Продукт Web</a></li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">
+      </section>
+      <section class="top-info-panel">
+        <h2 class="top-info-panel-header">Все спринты</h2>
+        <ul class="top-info-panel-actions">
+          <li class="top-info-panel-actions-item">
+            <a class="top-info-panel-actions-item-link" href="#">
               <img src="icons/star.svg" width="15" height="14" alt="">
             </a>
           </li>
-          <li>
-            <a href="#">Завершить спринт</a>
+          <li class="top-info-panel-actions-item btn btn-blue">
+            <a class="top-info-panel-actions-item-link" href="#">Завершить спринт</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="top-info-panel-actions-item">
+            <a class="top-info-panel-actions-item-link" href="#">
               <img src="icons/relations.svg" width="16" height="16" alt="">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="top-info-panel-actions-item btn">
+            <a class="top-info-panel-actions-item-link-btn" href="#">
               <img src="icons/more.svg" width="16" height="4" alt="">
             </a>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Меню доски</h2>
-        <ul>
-          <li>
-            <img src="icons/search.svg" width="16" height="16" alt="">
-          </li>
-          <li>
+      <section class="main-board-menu">
+        <h2 class="main-board-menu-title">Меню доски</h2>
+        <ul class="main-board-menu-list">
+          <li class="search-input-wrapper">
             <label>
-              <input type="text" placeholder="Search">
+              <input class="search-input" type="text" placeholder="Поиск">
             </label>
           </li>
-          <li>
-            <ul>
+          <li class="main-board-menu-list-item">
+            <ul class="main-board-menu-people-list">
               <li>
                 <a href="#">
                   <img src="img/avatar1.png" width="32" height="32" alt="">
@@ -231,12 +227,12 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Только мои задачи</a></li>
-          <li><a href="#">Недавно обновленные</a></li>
+          <li class="main-board-menu-list-item"><a href="#">Только мои задачи</a></li>
+          <li class="main-board-menu-list-item"><a href="#">Недавно обновленные</a></li>
 
-          <li>
+          <li class="main-board-menu-list-item">
             <a href="#">Спринты</a>
-            <ul>
+            <ul class="main-board-menu-sprint-list">
               <li><a href="#">Спринт 1</a></li>
               <li><a href="#">Спринт 2</a></li>
               <li><a href="#">Спринт 3</a></li>
