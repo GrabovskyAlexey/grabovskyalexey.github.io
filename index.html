@@ -198,40 +198,42 @@
               <input class="search-input" type="text" placeholder="Поиск">
             </label>
           </li>
-          <li class="main-board-menu-list-item">
+          <li class="main-board-menu-list-item avatar-list">
             <ul class="main-board-menu-people-list">
-              <li>
+              <li class="main-board-menu-people-list-item avatar-1">
                 <a href="#">
                   <img src="img/avatar1.png" width="32" height="32" alt="">
                 </a>
               </li>
-              <li>
+              <li class="main-board-menu-people-list-item avatar-2">
                 <a href="#">
                   <img src="img/avatar2.png" width="32" height="32" alt="">
                 </a>
               </li>
-              <li>
+              <li class="main-board-menu-people-list-item avatar-3">
                 <a href="#">
                   <img src="img/avatar3.png" width="32" height="32" alt="">
                 </a>
               </li>
-              <li>
+              <li class="main-board-menu-people-list-item avatar-4">
                 <a href="#">
                   <img src="img/avatar4.png" width="32" height="32" alt="">
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li class="main-board-menu-people-list-item summary-people">
+                <a class="main-board-menu-people-list-item-link" href="#">
                   9
                 </a>
               </li>
             </ul>
           </li>
-          <li class="main-board-menu-list-item"><a href="#">Только мои задачи</a></li>
-          <li class="main-board-menu-list-item"><a href="#">Недавно обновленные</a></li>
+          <li class="main-board-menu-list-item"><a class="main-board-menu-list-item-link" href="#">Только мои задачи</a>
+          </li>
+          <li class="main-board-menu-list-item"><a class="main-board-menu-list-item-link" href="#">Недавно
+            обновленные</a></li>
 
           <li class="main-board-menu-list-item">
-            <a href="#">Спринты</a>
+            <a class="main-board-menu-list-item-link" href="#">Спринты</a>
             <ul class="main-board-menu-sprint-list">
               <li><a href="#">Спринт 1</a></li>
               <li><a href="#">Спринт 2</a></li>
@@ -240,235 +242,268 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Доска</h2>
-        <section>
-          <h3>TO DO</h3>
-          <ul>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/experiment.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar1.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
-              </ul>
-            </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/task.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar2.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+      <section class="main-board">
+        <h2 class="main-board-title">Доска</h2>
+        <section class="main-board-column">
+          <h3 class="main-board-column-title">TO DO</h3>
+          <ul class="main-board-cards">
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/experiment.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no 1</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar1.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/subtask.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar3.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
-              </ul>
-            </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/design.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar4.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/task.svg" width="16" height="16" alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar2.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
-          </ul>
-        </section>
-        <section>
-          <h3>IN PROGRESS</h3>
-          <ul>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/experiment.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar1.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/subtask.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar3.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/task.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar2.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
-              </ul>
-            </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/subtask.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar3.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
-              </ul>
-            </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/design.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar4.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/design.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar4.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
           </ul>
         </section>
-        <section>
-          <h3>DONE</h3>
-          <ul>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/experiment.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar1.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
-              </ul>
-            </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/task.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar2.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+        <section class="main-board-column">
+          <h3 class="main-board-column-title">IN PROGRESS</h3>
+          <ul class="main-board-cards">
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/experiment.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar1.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/subtask.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar3.png" width="18" height="18" alt="">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/task.svg" width="16" height="16" alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar2.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
-            <li>
-              <p><a href="#">Epic</a></p>
-              <p>EXP | Create kanban board</p>
-              <img src="icons/types/design.svg" width="16" height="16" alt="">
-              <p>Ticket no</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/avatar4.png" width="18" height="18" alt="">
-                  </a>
-                </li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/subtask.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar3.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
-              <ul>
-                <li><a href="#">TAG1</a></li>
-                <li><a href="#">TAG2</a></li>
-                <li><a href="#">TAG3</a></li>
+            </li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/design.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar4.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="main-board-column">
+          <h3 class="main-board-column-title">DONE</h3>
+          <ul class="main-board-cards">
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/experiment.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar1.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
+              </ul>
+            </li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/task.svg" width="16" height="16" alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar2.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
+              </ul>
+            </li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/subtask.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar3.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
+              </ul>
+            </li>
+            <li class="main-board-cards-item">
+              <div class="main-board-cards-item-header">
+                <p class="main-board-cards-item-label"><a href="#">Epic</a></p>
+                <p class="main-board-cards-item-title">EXP | Create kanban board</p>
+              </div>
+              <div class="main-board-cards-item-info">
+                <div class="main-board-cards-item-info-icon-wrapper">
+                  <img class="main-board-cards-item-info-icon" src="icons/types/design.svg" width="16" height="16"
+                       alt="">
+                  <p class="main-board-cards-item-info-task-number">Ticket no</p>
+                </div>
+                <a href="#">
+                  <img src="img/avatar4.png" width="18" height="18" alt="">
+                </a>
+              </div>
+              <ul class="main-board-cards-item-tags">
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG1</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG2</a></li>
+                <li class="main-board-cards-item-tags-item"><a href="#">TAG3</a></li>
               </ul>
             </li>
           </ul>
