@@ -88,6 +88,10 @@ a {
 .left-menu-item {
   display: flex;
   padding: 9px 16px;
+  align-items: center;
+}
+.left-menu-item:hover {
+  background-color: var(--bg-light-gray-color);
 }
 
 .right-menu {
@@ -299,10 +303,12 @@ a {
 .main-board-menu-list {
   list-style-type: none;
   display: flex;
+  align-items: center;
   padding: 0;
 }
 .main-board-menu-list-item {
   display: flex;
+  align-items: center;
   padding: 9px 16px;
 }
 .main-board-menu-list-item-link {
@@ -461,6 +467,10 @@ a {
 }
 .main-board-cards-item-label a {
   color: var(--basic-deep-blue);
+}
+
+.dropdown-icon {
+  margin: 10px 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
