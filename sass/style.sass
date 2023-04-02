@@ -13,25 +13,27 @@
 /* Main
 
 \:root
-  --basic-white: #FFFFFF
-  --basic-black: #000000
-  --basic-light-gray: #D3D3D3
-  --basic-dark-gray: #9A9A9A
-  --basic-light-blue: #E9E6FD
-  --basic-deep-blue: #3E368F
-  --basic-outline-gray: #D5DADD
-  --button-blue: #4094F7
-  --element-hover-blue: #D7EDFF
-  --main-text-color: #252C32
-  --icon-deep-gray-color: #5B6871
-  --icon-light-gray-color: #84919A
-  --divider-light-gray-color: #E5E9EB
-  --card-text-color: #676767
-  --active-menu-text-color: #0E73F6
+  --basic-black:              #000000
+  --active-menu-text-color:   #0E73F6
+  --main-text-color:          #252C32
+  --basic-deep-blue:          #3E368F
+  --button-blue:              #4094F7
+  --icon-deep-gray-color:     #5B6871
+  --card-text-color:          #676767
   --inactive-text-grey-color: #6E7C87
-  --bg-light-gray-color: #F6F8F9
-  --main-border-color: #DDE2E4
+  --icon-light-gray-color:    #84919A
+  --basic-dark-gray:          #9A9A9A
+  --basic-light-gray:         #D3D3D3
+  --basic-outline-gray:       #D5DADD
+  --element-active-blue:      #D7EDFF
+  --main-border-color:        #DDE2E4
+  --divider-light-gray-color: #E5E9EB
+  --basic-light-blue:         #E9E6FD
+  --bg-light-gray-color:      #F6F8F9
+  --basic-white:              #FFFFFF
   --avatar-border-black: rgba(0, 0, 0, 0.1)
+  --element-hover-blue: rgba(215, 237, 255, 0.5)
+  --element-hover-icon-blue: rgba(14, 115, 246, 0.5)
 
 img
   max-width: 100%
@@ -81,11 +83,17 @@ a
     height: 14px
     color: var(--main-text-color)
   &-item
+    position: relative
     display: flex
     padding: 9px 16px
     align-items: center
     &:hover
       background-color: var(--bg-light-gray-color)
+
+.logo:hover
+  background: none
+.dropdown-left-menu:hover
+  background: none
 
 .right-menu
   list-style-type: none
@@ -103,9 +111,44 @@ a
   a
     height: 20px
 
-.project-dropdown-menu, .people-dropdown-menu, .board-dropdown-menu
+.people-dropdown-menu, .board-dropdown-menu
   display: none
 
+.dropdown-menu
+  z-index: 15
+  display: none
+  list-style-type: none
+  position: absolute
+  top: 34px
+  width: 150px
+  border: 1px solid var(--divider-light-gray-color)
+  padding-left: 0
+  left: 0
+  background: white
+  border-bottom-right-radius: 6px
+  border-bottom-left-radius: 6px
+  &.active
+    display: block
+  &-item
+    padding: 9px 16px
+    display: flex
+    align-items: center
+    border-top: 1px solid var(--divider-light-gray-color)
+    &:first-child
+      border-top: none
+    &:last-child
+      border-bottom-right-radius: 6px
+      border-bottom-left-radius: 6px
+    img
+      margin-right: 4px
+    a
+      display: flex
+      align-items: center
+      text-decoration: none
+      height: 14px
+      color: var(--main-text-color)
+    &:hover
+      background-color: var(--bg-light-gray-color)
 .logo
   padding: 8px 4px
 
@@ -152,10 +195,15 @@ a
   display: flex
   justify-content: space-between
   &-left-info-panel
+    overflow: hidden
+    display: none
     width: 240px
     background-color: var(--bg-light-gray-color)
     padding: 16px
     border-right: 1px solid var(--divider-light-gray-color)
+
+.open
+  display: block
 
 .left-info-panel-title
   display: flex
@@ -183,6 +231,23 @@ a
     display: flex
     align-items: center
     padding: 4px 12px 4px 8px
+    &:hover
+      background-color: var(--element-hover-blue)
+      border-radius: 6px
+      a
+        color: var(--active-menu-text-color)
+      svg
+        path
+          fill: var(--element-hover-icon-blue)
+    &.active
+      background: var(--element-active-blue)
+      border-radius: 6px
+      font-weight: 700
+      a
+        color: var(--active-menu-text-color)
+      svg
+        path
+          fill: var(--button-blue)
     &-link
       color: var(--main-text-color)
       margin-left: 8px
@@ -238,13 +303,18 @@ a
       &-link
         display: flex
         margin: 3px 14px
-        color: var(--bg-light-gray-color)
         &-btn
           display: flex
           margin: 8px
 .btn-blue
   background-color: var(--button-blue)
   font-weight: 700
+  &:hover
+    background-color: var(--basic-white)
+  a
+    color: var(--bg-light-gray-color)
+    &:hover
+      color: var(--button-blue)
 .main-board-menu
   display: flex
   &-title
@@ -255,6 +325,7 @@ a
     align-items: center
     padding: 0
     &-item
+      position: relative
       display: flex
       align-items: center
       padding: 9px 16px
@@ -387,3 +458,6 @@ a
           color: var(--basic-deep-blue)
 .dropdown-icon
   margin: 10px 8px
+
+footer
+  display: none
